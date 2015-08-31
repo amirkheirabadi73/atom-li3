@@ -1,5 +1,5 @@
 {
-	"name": "atom-li3",
+	"name": "li3",
 	"main": "./lib/li3",
 	"version": "0.0.0",
 	"private": false,
