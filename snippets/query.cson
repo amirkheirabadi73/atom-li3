@@ -1,4 +1,27 @@
 ".source.php":
-  "li3::redirect":
-    prefix: "l3redirect"
-    body: "$this->redirect('${1:/}');"
+
+  "li3::find":
+    prefix : "l3find"
+    body: "${1:Users}::find('${2:first}', array(\n
+    'conditions' => array('${3:author}' => ${4:'michael'}),\n
+	  'fields' => array('${5:name}'),\n
+	  'order' => array('created' => '${6:DESC}'),\n
+    'limit'=> ${7:5},\n
+    'page' => ${8:1}\n
+    ));\n"
+
+  "li3::create"
+    prefix: "l3create"
+    body: "$${1:post} = ${2:Posts}::crete(array(\n
+	  '${3:title}'  => '${4:My first blog post.}',\n
+    ));\n
+    $${5:post}->save();\n"
+
+  "li3::save"
+    prefix: "l3save"
+    body: "$${1:post}->save(${2:array('validate' => false)});"
+
+  "li3::validate"
+    prefix: "l3validate"
+    body: "$${1:post}->validates();\n
+    $${2:errors} = $${3:post}->errors();\n"

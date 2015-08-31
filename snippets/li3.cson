@@ -1,0 +1,13 @@
+".source.php":
+
+  "li3::redirect":
+    prefix: "l3redirect"
+    body: "$this->redirect('${1:/}');"
+
+  "li3::get Request":
+    prefix: "l3get"
+    body: "$this->request->query${1:['${2:id}']};\n"
+
+  "li3::post Request":
+    prefix: "l3post"
+    body: "$this->request->data${1:['${2:id}']};\n"
