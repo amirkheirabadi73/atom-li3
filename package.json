@@ -1,7 +1,7 @@
 {
   "name": "atom-li3",
   "main": "./lib/li3",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "description": "An atom.io package to easier use li3 framework",
   "repository": "https://github.com/amirkheirabadi/atom-li3",
