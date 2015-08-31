@@ -1,0 +1,4 @@
+".source.php":
+  "li3::redirect":
+    prefix: "l3redirect"
+    body: "$this->redirect('${1:/}');"

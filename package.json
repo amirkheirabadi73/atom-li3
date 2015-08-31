@@ -1,18 +1,13 @@
 {
-  "name": "li3",
-  "main": "./lib/li3",
-  "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [
-  ],
-  "activationCommands": {
-    "atom-workspace": "li3:toggle"
-  },
-  "repository": "https://github.com/atom/li3",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=0.174.0 <2.0.0"
-  },
-  "dependencies": {
-  }
+	"name": "laravel-facades",
+	"main": "./lib/li3",
+	"version": "1.0.0",
+	"private": false,
+	"description": "An atom.io package to easier use li3 framework",
+	"repository": "https://github.com/amirkheirabadi/atom-li3",
+	"license": "MIT",
+	"engines": {
+		"atom": ">0.50.0"
+	},
+	"dependencies": {}
 }
